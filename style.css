@@ -24,14 +24,21 @@ body{
     text-align: center;
     font-size: var(--h1) ;
 }
-form{
-align-items: center;
-display: flex;
+.calculator{
 height: 10vh;
 width: 10vw;
-display: flex;
-align-items: center;
 font-size: var(--h3);
-margin-left: 68rem;
+margin-left: 65rem;
 margin-top: 5rem;
+background-color: rgb(136, 136, 136);
+width: 30vw; height: 80vh; 
+}
+button{
+  font-size: var(--h3);
+  width: 6vw; height: 7vh;
+  border-radius: 1rem;
+  align-items: center;
+}
+.numbers{
+  margin-top: 10rem;
 }
