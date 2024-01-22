@@ -28,10 +28,11 @@ body{
 height: 10vh;
 width: 10vw;
 font-size: var(--h3);
-margin-left: 65rem;
+margin-left: auto;
+margin-right: auto;
 margin-top: 5rem;
 background-color: rgb(136, 136, 136);
-width: 30vw; height: 80vh; 
+width: 40vw; height: 30vh; 
 border-radius: 3rem;
 border-color: rgb(100, 100, 100);
 border-style: solid;
@@ -48,9 +49,4 @@ button{
 button:hover {
   cursor: pointer;
   background-image: linear-gradient(to top, #D8D9DB 0%, #e6e3e3 80%, #dad7d7 100%);
-}
-
-.numbers{
-  margin-top: 10rem;
-  
 }
