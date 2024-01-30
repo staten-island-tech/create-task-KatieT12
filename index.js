@@ -9,6 +9,7 @@ const DOMSelectors = {
     multiply: document.getElementById("multiply"),
     divide: document.getElementById("divide"),
     exponentation: document.getElementById("exponentation"),
+    resultbox: document.querySelector(".result")
 };
  
 function clearFields(){
@@ -21,7 +22,11 @@ DOMSelectors.add.addEventListener("click", function(event){
     event.preventDefault();
     // console.log(DOMSelectors.x.value + DOMSelectors.y.value)
     let sum = (DOMSelectors.x.value + DOMSelectors.y.value)
-    console.log(sum)
+    // console.log(sum)
+    DOMSelectors.resultbox.insertAdjacentElement(
+        "beforeend",
+        `<h2 class ="result">${sum}</h2>`
+    )
     clearFields();
 });
 //subtract
