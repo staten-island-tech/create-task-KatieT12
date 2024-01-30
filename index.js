@@ -20,32 +20,32 @@ function clearFields(){
 DOMSelectors.add.addEventListener("click", function(event){
     event.preventDefault();
     // console.log(DOMSelectors.x.value + DOMSelectors.y.value)
-    let sum = DOMSelectors.x.value + DOMSelectors.y.value
+    let sum = (DOMSelectors.x.value + DOMSelectors.y.value)
     console.log(sum)
     clearFields();
 });
 //subtract
 DOMSelectors.subtract.addEventListener("click", function(event){
     event.preventDefault();
-    console.log(DOMSelectors.x.value + DOMSelectors.y.value)
+    console.log(DOMSelectors.x.value - DOMSelectors.y.value)
     clearFields();
 });
 //multiply
 DOMSelectors.multiply.addEventListener("click", function(event){
     event.preventDefault();
-    console.log(DOMSelectors.x.value + DOMSelectors.y.value)
+    console.log(DOMSelectors.x.value * DOMSelectors.y.value)
     clearFields();
 });
 //divide
 DOMSelectors.divide.addEventListener("click", function(event){
     event.preventDefault();
-    console.log(DOMSelectors.x.value + DOMSelectors.y.value)
+    console.log(DOMSelectors.x.value / DOMSelectors.y.value)
     clearFields();
 });
 //exponent
 DOMSelectors.exponentation.addEventListener("click", function(event){
     event.preventDefault();
-    console.log(DOMSelectors.x.value + DOMSelectors.y.value)
+    console.log(DOMSelectors.x.value ** DOMSelectors.y.value)
     clearFields();
 });
 
