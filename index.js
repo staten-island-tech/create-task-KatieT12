@@ -9,48 +9,80 @@ const DOMSelectors = {
     multiply: document.getElementById("multiply"),
     divide: document.getElementById("divide"),
     exponentation: document.getElementById("exponentation"),
-    resultbox: document.querySelector(".result")
+    result: document.querySelector(".result")
 };
  
 function clearFields(){
     DOMSelectors.x.value = "";
     DOMSelectors.y.value = "";
 }
+function clearResultbox(){
+    DOMSelectors.result.innerHTML = " ";
+}
 
 //add
 DOMSelectors.add.addEventListener("click", function(event){
-    event.preventDefault();
-    // console.log(DOMSelectors.x.value + DOMSelectors.y.value)
-    let sum = (DOMSelectors.x.value + DOMSelectors.y.value)
-    // console.log(sum)
-    DOMSelectors.resultbox.insertAdjacentElement(
+    event.preventDefault();    
+    clearResultbox();
+    let sum = Number(DOMSelectors.x.value + DOMSelectors.y.value)
+    DOMSelectors.result.insertAdjacentHTML(
         "beforeend",
-        `<h2 class ="result">${sum}</h2>`
+        `<div class = "card">
+        <h2 class="resultnum">${sum}</h2>
+    </div>`
     )
     clearFields();
 });
 //subtract
 DOMSelectors.subtract.addEventListener("click", function(event){
     event.preventDefault();
-    console.log(DOMSelectors.x.value - DOMSelectors.y.value)
+    clearResultbox();
+    let difference = (DOMSelectors.x.value - DOMSelectors.y.value)
+    DOMSelectors.result.insertAdjacentHTML(
+        "beforeend",
+        `<div class = "card">
+        <h2 class="resultnum">${difference}</h2>
+    </div>`
+    )
     clearFields();
 });
 //multiply
 DOMSelectors.multiply.addEventListener("click", function(event){
     event.preventDefault();
-    console.log(DOMSelectors.x.value * DOMSelectors.y.value)
+    clearResultbox();
+    let product = (DOMSelectors.x.value * DOMSelectors.y.value)
+    DOMSelectors.result.insertAdjacentHTML(
+        "beforeend",
+        `<div class = "card">
+        <h2 class="resultnum">${product}</h2>
+    </div>`
+    )
     clearFields();
 });
 //divide
 DOMSelectors.divide.addEventListener("click", function(event){
     event.preventDefault();
-    console.log(DOMSelectors.x.value / DOMSelectors.y.value)
+    clearResultbox();
+    let dividend = (DOMSelectors.x.value / DOMSelectors.y.value)
+    DOMSelectors.result.insertAdjacentHTML(
+        "beforeend",
+        `<div class = "card">
+        <h2 class="resultnum">${dividend}</h2>
+    </div>`
+    )
     clearFields();
 });
 //exponent
 DOMSelectors.exponentation.addEventListener("click", function(event){
     event.preventDefault();
-    console.log(DOMSelectors.x.value ** DOMSelectors.y.value)
+    clearResultbox();
+    let something = (DOMSelectors.x.value ** DOMSelectors.y.value)
+    DOMSelectors.result.insertAdjacentHTML(
+        "beforeend",
+        `<div class = "card">
+        <h2 class="resultnum">${something}</h2>
+    </div>`
+    )
     clearFields();
 });
 
