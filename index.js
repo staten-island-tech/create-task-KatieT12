@@ -24,7 +24,7 @@ function clearResultbox(){
 DOMSelectors.add.addEventListener("click", function(event){
     event.preventDefault();    
     clearResultbox();
-    let sum = Number(DOMSelectors.x.value + DOMSelectors.y.value)
+    let sum = Number(DOMSelectors.x.value) + Number(DOMSelectors.y.value)
     DOMSelectors.result.insertAdjacentHTML(
         "beforeend",
         `<div class = "card">
