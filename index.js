@@ -11,7 +11,6 @@ const DOMSelectors = {
     exponentation: document.getElementById("exponentation"),
     result: document.querySelector(".result")
 };
- 
 function clearFields(){
     DOMSelectors.x.value = "";
     DOMSelectors.y.value = "";
@@ -19,8 +18,6 @@ function clearFields(){
 function clearResultbox(){
     DOMSelectors.result.innerHTML = " ";
 }
-
-//add
 DOMSelectors.add.addEventListener("click", function(event){
     event.preventDefault();    
     clearResultbox();
@@ -33,7 +30,6 @@ DOMSelectors.add.addEventListener("click", function(event){
     )
     clearFields();
 });
-//subtract
 DOMSelectors.subtract.addEventListener("click", function(event){
     event.preventDefault();
     clearResultbox();
@@ -46,7 +42,6 @@ DOMSelectors.subtract.addEventListener("click", function(event){
     )
     clearFields();
 });
-//multiply
 DOMSelectors.multiply.addEventListener("click", function(event){
     event.preventDefault();
     clearResultbox();
@@ -59,7 +54,6 @@ DOMSelectors.multiply.addEventListener("click", function(event){
     )
     clearFields();
 });
-//divide
 DOMSelectors.divide.addEventListener("click", function(event){
     event.preventDefault();
     clearResultbox();
@@ -69,10 +63,9 @@ DOMSelectors.divide.addEventListener("click", function(event){
         `<div class = "card">
         <h2 class="resultnum">${dividend}</h2>
     </div>`
-    )
+    )                                                                                           
     clearFields();
 });
-//exponent
 DOMSelectors.exponentation.addEventListener("click", function(event){
     event.preventDefault();
     clearResultbox();
