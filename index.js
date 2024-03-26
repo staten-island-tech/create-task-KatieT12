@@ -69,11 +69,11 @@ DOMSelectors.divide.addEventListener("click", function(event){
 DOMSelectors.exponentation.addEventListener("click", function(event){
     event.preventDefault();
     clearResultbox();
-    let something = (DOMSelectors.x.value ** DOMSelectors.y.value)
+    let exponentationResult = (DOMSelectors.x.value ** DOMSelectors.y.value)
     DOMSelectors.result.insertAdjacentHTML(
         "beforeend",
         `<div class = "card">
-        <h2 class="resultnum">${something}</h2>
+        <h2 class="resultnum">${exponentationResult}</h2>
     </div>`
     )
     clearFields();
